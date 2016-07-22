@@ -3,9 +3,8 @@
 def counting(players, max_number) # max_number is number to count to 
   player = 1 # start play from first player
   d = 1      # d is direction
-  (1..max_number).each do |i|
-    number = i
-    puts "player #{player} has said number #{number}"
+  (1..max_number).each do |number|
+##   test -- puts "player #{player} has said number #{number}"
     if number%7 == 0
       d = -d
     end
